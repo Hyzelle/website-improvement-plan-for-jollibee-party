@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a Party - Jollibee</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #fff;
+        }
+        .container {
+            padding: 0 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .top-nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #d90000;
+            color: white;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .top-nav .menu-icon, .top-nav .logo {
+            font-size: 24px;
+        }
+        .top-nav .logo {
+            font-weight: bold;
+        }
+        .breadcrumbs {
+            font-size: 10px;
+            padding: 15px 20px;
+            background-color: #f8f8f8;
+            border-bottom: 1px solid #eee;
+        }
+        .breadcrumbs a {
+            text-decoration: none;
+            color: #666;
+            margin-right: 5px;
+        }
+        .search-bar {
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        .content-header {
+            padding-top: 20px;
+        }
+        .main-heading {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 30px;
+        }
+
+        .party-options {
+            border-top: 1px solid #eee;
+        }
+        .party-options a {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            text-decoration: none;
+            text-emphasis-color:red ;
+            font-family: Arial, Helvetica, sans-serif;   
+        }
+        .arrow {
+            color: #999;
+            font-size: 12px;
+        }
+        .empty-placeholder {
+            padding: 18px 0;
+            border-bottom: 1px solid #eee;
+            font-size: 16px;
+            color: #ccc;
+        }
+        
+        .footer-top {
+            padding: 30px 0;
+            text-align: center;
+        }
+        .order-online-button {
+            display: block;
+            margin: 10px auto 30px;
+            padding: 10px 30px;
+            border: 1px solid #d90000;
+            color: #d90000;
+            background: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            max-width: 200px;
+            font-size: 14px;
+        }
+        .app-links img {
+            height: 40px;
+            margin: 0 5px;
+        }
+
+        .footer-bottom {
+            background-color: #f8f8f8;
+            padding: 20px 0;
+            border-top: 1px solid #eee;
+        }
+        .footer-links {
+            text-align: left;
+        }
+        .footer-links a {
+            display: block;
+            margin: 8px 0;
+            color: #666;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons i {
+            font-size: 20px;
+            margin: 0 5px;
+            color: #666;
+        }
+        .copyright {
+            font-size: 11px;
+            color: #999;
+            margin-top: 10px;
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-nav">
+        <i class="fas fa-bars menu-icon"></i>
+        <div class="logo">Jollibee</div>
+        <i class="fas fa-ellipsis-v menu-icon"></i>
+    </div>
+
+    <div class="breadcrumbs">
+        <a href="#">Jollibee Philippines Help Center</a> >
+        <a href="#">FAQs Kids Party</a> >
+        Book a Party
+    </div>
+
+    <div class="search-bar">
+        <input type="text" placeholder="Search">
+    </div>
+
+    <div class="container">
+        <div class="content-header">
+            <h1 class="main-heading">Book a Party</h1>
+            <p class="description">
+                Ready to celebrate? Find everything you need to know about booking a Jollibee Kids Party—from choosing a theme or location to selecting food bundles and scheduling your preferred date.
+            </p>
+        </div>
+
+        <div class="party-options">
+            <a href="making reservation.html">Making a reservation<i class="fas fa-chevron-right arrow"></i></a>
+            <a href="How to pay for a party booking">How to pay for a party booking<i class="fas fa-chevron-right arrow"></i></a>
+            <a href="Menu overview">Menu overview<i class="fas fa-chevron-right arrow"></i></a>
+            <a href="Store Information ">Store Information<i class="fas fa-chevron-right arrow"></i></a>
+            <a href="Party Themes & Packages">Party Themes & Packages<i class="fas fa-chevron-right arrow"></i></a>
+            <div class="empty-placeholder">empty</div>
+        </div>
+        
+        <div class="footer-top">
+            <h4 style="font-weight: normal; margin-bottom: 5px;">Order Online</h4>
+            <a href="#" class="order-online-button">Order Online</a>
+            <h4 style="font-weight: normal; margin-top: 30px; margin-bottom: 10px;">Download Our Apps</h4>
+            <div class="app-links">
+                <img src="appstore_icon.png" alt="App Store">
+                <img src="googleplay_icon.png" alt="Google Play">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-links" style="column-count: 2;">
+                <a href="#">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Order Now</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Franchising</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Promos</a>
+                <a href="#">Locations</a>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i> 
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p class="copyright">
+                Version 1.1.0 ©2020 Jollibee Foods Corporation. All rights reserved.
+            </p>
+            <div class="footer-buttons">
+                <i class="fas fa-align-justify" style="margin: 0 10px;"></i>
+                <i class="far fa-circle" style="margin: 0 10px;"></i>
+                <i class="fas fa-square" style="margin: 0 10px;"></i>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
