@@ -3,38 +3,64 @@
 <head>
 <style>
   body {
+    margin: 0;
+    padding: 40px;
     font-family: Arial, sans-serif;
-    background: #f4f4f4;
-    padding: 20px;
+
+    /* CLEAR background color + gradient */
+    background: linear-gradient(135deg, #ff0000, #ffcc00);
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
   }
+
+  /* Decorative circles */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.35;
+  }
+
+  .c1 { width: 200px; height: 200px; background: #ffffff; top: 10%; left: 5%; }
+  .c2 { width: 250px; height: 250px; background: #ffe08a; bottom: 10%; right: 10%; }
+  .c3 { width: 180px; height: 180px; background: #ff7575; top: 55%; left: 30%; }
+
+  /* Content box */
   .card {
     background: white;
-    padding: 20px;
-    max-width: 500px;
+    padding: 25px;
+    max-width: 550px;
     margin: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
   }
+
   h2 {
+    margin-top: 0;
     color: #e21b1b;
-    margin-bottom: 10px;
   }
+
   p {
-    line-height: 1.5;
+    line-height: 1.6;
   }
 </style>
 </head>
 <body>
 
+<!-- Background Shapes -->
+<div class="circle c1"></div>
+<div class="circle c2"></div>
+<div class="circle c3"></div>
+
+<!-- Text Box -->
 <div class="card">
   <h2>Store Information</h2>
-
   <p>
     A Jollibee Kids Party includes a party theme, a Jollibee mascot appearance,
     venue use, entertainment (games and music), and meal options for a minimum
     of <strong>30 guests</strong>.
   </p>
-
   <p>
     The party can be booked online, where you select your preferred store, date,
     time, and customize your food and add-ons.
