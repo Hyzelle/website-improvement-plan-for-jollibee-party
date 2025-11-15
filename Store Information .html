@@ -1,71 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-  body {
-    margin: 0;
-    padding: 40px;
-    font-family: Arial, sans-serif;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jollibee Store Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
 
-    /* CLEAR background color + gradient */
-    background: linear-gradient(135deg, #ff0000, #ffcc00);
-    min-height: 100vh;
-    position: relative;
-    overflow: hidden;
-  }
 
-  /* Decorative circles */
-  .circle {
-    position: absolute;
-    border-radius: 50%;
-    opacity: 0.35;
-  }
+        .content {
+              border-top: 1px solid #eee;
+               max-width: 600px;
+            margin: 0 auto;
+        }
 
-  .c1 { width: 200px; height: 200px; background: #ffffff; top: 10%; left: 5%; }
-  .c2 { width: 250px; height: 250px; background: #ffe08a; bottom: 10%; right: 10%; }
-  .c3 { width: 180px; height: 180px; background: #ff7575; top: 55%; left: 30%; }
+        .content h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
 
-  /* Content box */
-  .card {
-    background: white;
-    padding: 25px;
-    max-width: 550px;
-    margin: auto;
-    position: relative;
-    border-radius: 15px;
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-  }
+        .content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+        
+       
+        
+      .store {
+            border-top: 1px solid #eee;
+        }
+        .store a {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         padding: 18px 0;
+         border-bottom: 1px solid #eee;
+         text-decoration: none;
+         text-emphasis-color:red ;
+         font-family: Arial, Helvetica, sans-serif;  
+         max-width: 600px;     
+         margin: 0 auto;
+        }
+        .store a:hover{
+            text-decoration: underline;
+        }
 
-  h2 {
-    margin-top: 0;
-    color: #e21b1b;
-  }
+        .feedback-tab {
+            position: fixed;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) rotate(-90deg);
+            transform-origin: 100% 100%;
+            background-color: #d1121d;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 0 0 5px 5px;
+            cursor: pointer;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            white-space: nowrap;
 
-  p {
-    line-height: 1.6;
-  }
-</style>
+        }
+
+    </style>
 </head>
 <body>
 
-<!-- Background Shapes -->
-<div class="circle c1"></div>
-<div class="circle c2"></div>
-<div class="circle c3"></div>
+    <div class="content">
+        <h1>Store Information</h1>
+        <p>Get the details you need about **Jollibee stores offering Jollibee Kids Party**—store availability, contact information, and how to reach your chosen branch.</p>
+    </div>
+    
+  <div class="store">
+       <a href="wheel-chair friendly.html">Is the wheelchair-friendly for Jollibee Kids Party</a>
+       <a href="How do I check availability for party zone for Jollibee Kids Party.html">How do I check availability for party zone for Jollibee Kids Party</a>
+       </div>
 
-<!-- Text Box -->
-<div class="card">
-  <h2>Store Information</h2>
-  <p>
-    A Jollibee Kids Party includes a party theme, a Jollibee mascot appearance,
-    venue use, entertainment (games and music), and meal options for a minimum
-    of <strong>30 guests</strong>.
-  </p>
-  <p>
-    The party can be booked online, where you select your preferred store, date,
-    time, and customize your food and add-ons.
-  </p>
-</div>
+    <div class="feedback-tab">
+        Feedback
+    </div>
 
 </body>
 </html>
