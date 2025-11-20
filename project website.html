@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book a Party - Jollibee</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="css.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -84,7 +84,10 @@
             border-bottom: 1px solid #eee;
             text-decoration: none;
             text-emphasis-color:red ;
-            font-family: Arial, Helvetica, sans-serif;   
+            font-family: Arial, Helvetica, sans-serif;  
+        }
+        .party-options a:hover{
+            text-decoration: underline;
         }
         .arrow {
             color: #999;
@@ -152,6 +155,25 @@
             justify-content: center;
             margin-top: 20px;
         }
+        .feedback-tab {
+            position: fixed;
+            right: 0;
+            top: 550px;
+            transform: translateY(-50%) translateX(20px) rotate(270deg);
+            
+            background-color: #d9534f;
+            color: white;
+            padding: 10px 15px;
+            font-size: 14px;
+            font-weight: 500;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            
+            transform-origin: bottom left;
+            right: -25px;
+        }
     </style>
 </head>
 <body>
@@ -181,11 +203,11 @@
         </div>
 
         <div class="party-options">
-            <a href="making reservation.html">Making a reservation<i class="fas fa-chevron-right arrow"></i></a>
-            <a href="How to pay for a party booking">How to pay for a party booking<i class="fas fa-chevron-right arrow"></i></a>
-            <a href="Menu overview">Menu overview<i class="fas fa-chevron-right arrow"></i></a>
-            <a href="Store Information ">Store Information<i class="fas fa-chevron-right arrow"></i></a>
-            <a href="Party Themes & Packages">Party Themes & Packages<i class="fas fa-chevron-right arrow"></i></a>
+            <a href="making reservation.html">MAKING RESERVATION</a>
+            <a href="How to pay for a party booking.html">HOW TO PAY PARTY BOOKING</a>
+            <a href="Menu overview.html">MENU OVERVIEW</a>
+            <a href="Store Information .html">STORE INFORMATION</a> 
+          
             <div class="empty-placeholder">empty</div>
         </div>
         
@@ -227,8 +249,10 @@
                 <i class="fas fa-square" style="margin: 0 10px;"></i>
             </div>
         </div>
+         <div class="feedback-tab">
+            Feedback
+        </div>
     </div>
 
 </body>
 </html>
-
