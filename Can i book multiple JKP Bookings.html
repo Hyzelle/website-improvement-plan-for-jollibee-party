@@ -9,7 +9,7 @@
         body {
             margin: 0;
             font-family: 'Roboto', sans-serif;
-            background-color: #ffffff;
+            background-color:black
             color: #ffffff;
         }
 
@@ -130,19 +130,105 @@
             </ul>
         </section>
     </main>
-     <div class="footer-bottom">
-        <div class="container">
-            <div class="footer-links" style="column-count: 2;">
-                <a href="#">About Us</a>
-                <a href="#">Careers</a>
-                <a href="#">Order Now</a>
-                <a href="#">Corporate Information</a>
-                <a href="#">Franchising</a>
-                <a href="#">Privacy Notice</a>
-                <a href="#">Terms and Conditions</a>
-                <a href="#">Promos</a>
-                <a href="#">Locations</a>
-            </div>
+   <div class="footer-bottom">
+    <div class="container">
+        <div class="footer-links" style="column-count: 2;">
+
+            <a href="#" data-title="About Us" data-info="
+- Jollibee is the Philippines’ #1 fast-food chain.
+- Known for Chickenjoy, Jolly Spaghetti, and Yumburger.
+- Committed to serving great-tasting food and joyful experiences.
+">About Us</a>
+
+            <a href="#" data-title="Careers" data-info="
+- Join a company that values fun, family, and excellence.
+- Opportunities available in store operations and corporate offices.
+- Training programs help employees grow and succeed.
+">Careers</a>
+
+            <a href="#" data-title="Order Now" data-info="
+- Order your favorite meals online anytime.
+- Fast delivery straight to your home.
+- Special bundles and delivery-only deals available.
+">Order Now</a>
+
+            <a href="#" data-title="Corporate Information" data-info="
+- Part of Jollibee Foods Corporation (JFC).
+- Operates thousands of stores worldwide.
+- Focused on quality, service, and product innovation.
+">Corporate Information</a>
+
+            <a href="#" data-title="Franchising" data-info="
+- Open your own Jollibee store.
+- Full support from store design to operations.
+- Ideal for long-term, growth-focused entrepreneurs.
+">Franchising</a>
+
+            <a href="#" data-title="Privacy Notice" data-info="
+- Your personal data is protected and securely handled.
+- Information is used only to provide better service.
+- We comply with all Philippine data privacy laws.
+">Privacy Notice</a>
+
+            <a href="#" data-title="Terms and Conditions" data-info="
+- Rules for using the website and online services.
+- Includes order guidelines and payment requirements.
+- Ensures a safe and fair experience for all customers.
+">Terms and Conditions</a>
+
+            <a href="#" data-title="Promos" data-info="
+- Enjoy limited-time offers and discounts.
+- Watch out for seasonal meals and bundle deals.
+- Available in participating stores only.
+">Promos</a>
+
+            <a href="#" data-title="Locations" data-info="
+- Find the nearest Jollibee store easily.
+- Search by city, province, or mall location.
+- Many stores offer delivery and drive-thru.
+">Locations</a>
+
+        </div>
+    </div>
+</div>
+
+<!-- REUSABLE MODAL -->
+<div id="infoModal" class="info-modal" 
+     style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); padding-top:80px;">
+    <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
+        <h3 id="modalTitle"></h3>
+        <ul id="modalList"></ul>
+        <button onclick="document.getElementById('infoModal').style.display='none'">Close</button>
+    </div>
+</div>
+
+<!-- WORKING JAVASCRIPT -->
+<script>
+    document.querySelectorAll(".footer-links a").forEach(link => {
+        link.addEventListener("click", function(e){
+            e.preventDefault();
+
+            // Set modal title
+            document.getElementById("modalTitle").innerText = this.dataset.title;
+
+            // Convert info text to bullet list
+            let items = this.dataset.info.trim().split("\n");
+            let list = document.getElementById("modalList");
+            list.innerHTML = "";
+
+            items.forEach(i => {
+                if (i.trim() !== "") {
+                    let li = document.createElement("li");
+                    li.innerText = i.replace("-", "").trim();
+                    list.appendChild(li);
+                }
+            });
+
+            // Show modal
+            document.getElementById("infoModal").style.display = "block";
+        });
+    });
+</script>
             <div class="social-icons">
                 <i class="fab fa-facebook-f"></i>
                 <i class="fab fa-twitter"></i> 
