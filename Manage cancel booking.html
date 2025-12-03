@@ -185,41 +185,6 @@
         <button type="submit" id="submit-button">Submit Request</button>
     </form>
 </div>
-
-<script>
-    const rescheduleRadio = document.getElementById('action-reschedule');
-    const cancelRadio = document.getElementById('action-cancel');
-    const rescheduleFields = document.getElementById('reschedule-fields');
-    const cancelFields = document.getElementById('cancel-fields');
-    const submitButton = document.getElementById('submit-button');
-    const form = document.getElementById('manage-booking-form');
-
-    function updateFormVisibility() {
-        if (rescheduleRadio.checked) {
-            rescheduleFields.style.display = 'block';
-            cancelFields.style.display = 'none';
-            submitButton.textContent = 'Submit Reschedule Request';
-        } else if (cancelRadio.checked) {
-            rescheduleFields.style.display = 'none';
-            cancelFields.style.display = 'block';
-            submitButton.textContent = 'Confirm Cancellation';
-        } else {
-            rescheduleFields.style.display = 'none';
-            cancelFields.style.display = 'none';
-            submitButton.textContent = 'Submit Request';
-        }
-    }
-
-    rescheduleRadio.addEventListener('change', updateFormVisibility);
-    cancelRadio.addEventListener('change', updateFormVisibility);
-
-    updateFormVisibility();
-
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Form Submitted! (In a real application, this data would be sent to a server.)');
-    });
-
 </script>
   <div class="ganda">
         <a href="project website.html">BACK TO HOME</a>

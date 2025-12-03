@@ -3,158 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book a Party - Jollibee</title>
-    <link rel="stylesheet" href="css.css">
+    <title>Making a reservation</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+         font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #fff;
+            background-color: #fff;  
         }
-        .container {
-            padding: 0 20px;
-            max-width: 600px;
-            margin: 0 auto;
+         .logo {
+            color: white;
         }
+         .hmp {
+            background-color: rgb(197, 7, 7);
+            color:white;
+            padding: 10px 20px;
+            height: 50px;
+         }
+          
+        
 
-        .top-nav {
+        .hmp-content {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 20px;
-            background-color: #d90000;
-            color: white;
-            position: sticky;
-            top: 0;
-            z-index: 10;
-        }
-        .top-nav .menu-icon, .top-nav .logo {
-            font-size: 24px;
-        }
-        .top-nav .logo {
-            font-weight: bold;
-        }
-        .breadcrumbs {
-            font-size: 10px;
-            padding: 15px 20px;
-            background-color: #f8f8f8;
-            border-bottom: 1px solid #eee;
-        }
-        .breadcrumbs a {
-            text-decoration: none;
-            color: #666;
-            margin-right: 5px;
-        }
-        .search-bar {
-            padding: 15px 20px;
-            border-bottom: 1px solid #eee;
-        }
-        .search-bar input {
-            width: 100%;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-        
-        .content-header {
-            padding-top: 20px;
-        }
-        .main-heading {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 10px;
-        }
-        .description {
-            font-size: 14px;
-            color: #666;
-            line-height: 1.5;
-            margin-bottom: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+         
+           
         }
 
-        .party-options {
-            border-top: 1px solid #eee;
+        .container {
+            
+            padding: 0 20px;
+         max-width: 600px;
+            margin: 0 auto;
+       
+      
+          
         }
-        .party-options a {
+
+        header h1 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #faf8f8;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        header h2{
+            color: #000;
+         border: yellow;
+           padding: 10px 20px;
+            
+        }
+
+        header p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 30px;
+            color: #555;
+        }
+
+        header p strong {
+            font-weight: bold;
+        }
+
+        .faq-list {
+             border-top: 1px solid #eee;
+             
+        }
+           
+       .faq-list a {
             display: flex;
             justify-content: space-between;
+            text-align: center;
             align-items: center;
             padding: 18px 0;
             border-bottom: 1px solid #eee;
             text-decoration: none;
             text-emphasis-color:red ;
             font-family: Arial, Helvetica, sans-serif;  
-        }
-        .party-options a:hover{
-            text-decoration: underline;
-        }
-        .arrow {
-            color: #999;
-            font-size: 12px;
-        }
-        .empty-placeholder {
-            padding: 18px 0;
-            border-bottom: 1px solid #eee;
-            font-size: 16px;
-            color: #ccc;
-        }
         
-        .footer-top {
-            padding: 30px 0;
-            text-align: center;
         }
-        .order-online-button {
-            display: block;
-            margin: 10px auto 30px;
-            padding: 10px 30px;
-            border: 1px solid #d90000;
-            color: #d90000;
-            background: #fff;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            max-width: 200px;
-            font-size: 14px;
-        }
-        .app-links img {
-            height: 40px;
-            margin: 0 5px;
+         .faq-list :hover{
+            text-decoration: underline;
+          }
+        .faq-item {
+            font-size: 17px;
+            line-height: 1.4;
+            padding: 15px 0;
+            border-bottom: 1px solid #eee;
+            color: #000;
         }
 
-        .footer-bottom {
-            background-color: #f8f8f8;
-            padding: 20px 0;
-            border-top: 1px solid #eee;
+        .faq-list .faq-item:last-child {
+            border-bottom: none;
         }
-        .footer-links {
-            text-align: left;
-        }
-        .footer-links a {
-            display: block;
-            margin: 8px 0;
-            color: #666;
-            text-decoration: none;
-            font-size: 13px;
-        }
-        .social-icons {
-            margin-top: 20px;
-        }
-        .social-icons i {
-            font-size: 20px;
-            margin: 0 5px;
-            color: #666;
-        }
-        .copyright {
-            font-size: 11px;
-            color: #999;
-            margin-top: 10px;
-        }
-        .footer-buttons {
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-        }
+
         .feedback-tab {
             position: fixed;
             right: 0;
@@ -174,170 +120,114 @@
             transform-origin: bottom left;
             right: -25px;
         }
+
+        .ganda{
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                padding: 15px;
+            }
+        }
+         .footer-bottom {
+            background-color: rgb(248, 247, 247);
+             padding: 20px 0;
+            border-top: 1px solid #eee;
+          
+        }
+        .footer-links {
+            text-align: left;
+        }
+        .footer-links a {
+            display: block;
+            margin: 8px 0;
+            color: #8e8c8c;
+            text-decoration: none;
+            font-size: 13px;
+        }
+        
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons i {
+            font-size: 20px;
+            margin: 0 5px;
+            color: #666;
+        }
+        .copyright {
+            font-size: 11px;
+            color: #898888;
+            margin-top: 10px;
+        }
+        .footer-buttons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-
-    <div class="top-nav">
-        <i class="fas fa-bars menu-icon"></i>
-        <div class="logo">Jollibee</div>
-        <i class="fas fa-ellipsis-v menu-icon"></i>
-    </div>
-
-    <div class="breadcrumbs">
-        <a href="#">Jollibee Philippines Help Center</a> >
-        <a href="#">FAQs Kids Party</a> >
-        Book a Party
-    </div>
-
-    <div class="search-bar">
-        <input type="text" placeholder="Search">
-    </div>
+    <header class="hmp">
+        <div>
+            <h1>Jollibee</h1>
+            <div class="red-pill"></div>
+        </div>
+    </header>
 
     <div class="container">
-        <div class="content-header">
-            <h1 class="main-heading">Book a Party</h1>
-            <p class="description">
-                Start your party planning here! Learn how to book your Jollibee Kids Party, from choosing your theme to confirming your store and date.
-        </div>
+        <header>
+            <h2>Making a reservation</h2>
+            <p><i>Start your party planning here! Learn how to book your Jollibee Kids Party, from choosing your theme to confirming your store and date.</i></p>
+        </header>
+    
 
-        <div class="party-options">
-            <a href="making reservation.html">MAKING RESERVATION</a>
-            <a href="How to pay for a party booking.html">HOW TO PAY PARTY BOOKING</a>
-            <a href="Menu overview.html">MENU OVERVIEW</a>
-            <a href="Store Information .html">STORE INFORMATION</a> 
-          
-            <div class="empty-placeholder">empty</div>
-        </div>
+       
+        <div class="faq-list">
+         <a href="How do I check availability for party zone for Jollibee Kids Party.html">How do I check availability for party zone for Jollibee Kids Party</a>
+         <a href="how to book via party.html">How to Book a Party via Jollibee Kids Party website</a>
+         <a href="Which Mascots are available for booking on Jollibee Kids Party website.html">Which Mascots are available for booking on Jollibee Kids Party website</a>
+          <a href="Can i book multiple JKP Bookings.html">Can i book Jollibee Kids Party</a>
+         <a href="Party Theme.html">Party Themes</a>
+         <a href="What information do I need to provide to book a Jollibee Kids Party.html">What information do I need to provide to book a Jollibee Kids Party</a>
         
-        <div class="footer-top">
-            <h4 style="font-weight: normal; margin-bottom: 5px;">Order Online</h4>
-            <a href="#" class="order-online-button">Order Online</a>
-            <h4 style="font-weight: normal; margin-top: 30px; margin-bottom: 10px;">Download Our Apps</h4>
-            <div class="app-links">
-                <img src="appstore_icon.png" alt="App Store">
-                <img src="googleplay_icon.png" alt="Google Play">
-            </div>
-        </div>
-    </div>
-
-  <div class="footer-bottom">
+         </div>
+        </main>
+         <div class="footer-bottom">
         <div class="container">
             <div class="footer-links" style="column-count: 2;">
-                <a href="about-us.html" title="Learn more about Jollibee’s story, values, and commitment to joy.">About Us</a>
-                <a href="careers.html" title="Explore job opportunities and build your career with Jollibee.">Careers</a>
-                <a href="order-now.html" title="Order your favorite Jollibee meals online.">Order Now</a>
-                <a href="corporate-information.html" title="Learn about Jollibee’s corporate background and operations.">Corporate Information</a>
-                <a href="franchising.html" title="See how you can franchise your own Jollibee store.">Franchising</a>
-                <a href="privacy-notice.html" title="Understand how Jollibee protects and manages your data.">Privacy Notice</a>
-                <a href="terms-and-conditions.html" title="View the terms and conditions for using Jollibee services.">Terms and Conditions</a>
-                <a href="promos.html" title="Check out the latest Jollibee deals and promotions.">Promos</a>
-                <a href="locations.html" title="Find a Jollibee store near you.">Locations</a>
+                <a href="about us.html">About Us</a>
+                <a href="#">Careers</a>
+                <a href="#">Order Now</a>
+                <a href="#">Corporate Information</a>
+                <a href="#">Franchising</a>
+                <a href="#">Privacy Notice</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Promos</a>
+                <a href="#">Locations</a>
+            </div>
+            <div class="social-icons">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-twitter"></i> 
+                <i class="fab fa-instagram"></i>
+            </div>
+            <p class="copyright">
+                Version 1.1.0 ©2020 Jollibee Foods Corporation. All rights reserved.
+            </p>
+            <div class="footer-buttons">
+                <i class="fas fa-align-justify" style="margin: 0 10px;"></i>
+                <i class="far fa-circle" style="margin: 0 10px;"></i>
+                <i class="fas fa-square" style="margin: 0 10px;"></i>
             </div>
         </div>
-    </div>
 
-    <!-- Info Modals -->
-    <div id="modal-about" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>About Us</h3>
-            <p>Learn more about Jollibee’s story, values, and commitment to joy.</p>
-            <button onclick="document.getElementById('modal-about').style.display='none'">Close</button>
+        <div class="feedback-tab">
+            Feedback
         </div>
+     </div>  
+
+    <div class="ganda">
+        <a href="project website.html">BACK TO HOME</a>
     </div>
-
-    <script>
-        document.querySelector("a[href='about-us.html']").addEventListener('click', function(e){ e.preventDefault(); document.getElementById('modal-about').style.display='block'; });
-    </script>
-
-    <!-- Info Modals -->
-
-    <div id="modal-careers" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Careers</h3>
-            <p>Explore job opportunities and start your journey with Jollibee.</p>
-            <button onclick="document.getElementById('modal-careers').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-order" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Order Now</h3>
-            <p>Order your favorite Jollibee meals online anytime.</p>
-            <button onclick="document.getElementById('modal-order').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-corporate" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Corporate Information</h3>
-            <p>Learn more about Jollibee’s corporate structure and operations.</p>
-            <button onclick="document.getElementById('modal-corporate').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-franchising" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Franchising</h3>
-            <p>See how you can franchise and open your own Jollibee store.</p>
-            <button onclick="document.getElementById('modal-franchising').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-privacy" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Privacy Notice</h3>
-            <p>Understand how Jollibee handles and protects your personal information.</p>
-            <button onclick="document.getElementById('modal-privacy').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-terms" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Terms and Conditions</h3>
-            <p>Read the terms and conditions governing Jollibee services.</p>
-            <button onclick="document.getElementById('modal-terms').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-promos" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Promos</h3>
-            <p>Check out the latest deals and promotions from Jollibee.</p>
-            <button onclick="document.getElementById('modal-promos').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <div id="modal-locations" class="info-modal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6); padding-top:80px;">
-        <div style="background:#fff; margin:auto; padding:20px; width:80%; max-width:400px; border-radius:10px;">
-            <h3>Locations</h3>
-            <p>Find the nearest Jollibee store in your area.</p>
-            <button onclick="document.getElementById('modal-locations').style.display='none'">Close</button>
-        </div>
-    </div>
-
-    <!-- JS Triggers -->
-    <script>
-        const modalMap = {
-            "about-us.html": "modal-about",
-            "careers.html": "modal-careers",
-            "order-now.html": "modal-order",
-            "corporate-information.html": "modal-corporate",
-            "franchising.html": "modal-franchising",
-            "privacy-notice.html": "modal-privacy",
-            "terms-and-conditions.html": "modal-terms",
-            "promos.html": "modal-promos",
-            "locations.html": "modal-locations"
-        };
-
-        document.querySelectorAll('.footer-links a').forEach(link => {
-            link.addEventListener('click', function(e){
-                e.preventDefault();
-                const modalId = modalMap[this.getAttribute('href')];
-                if(modalId) document.getElementById(modalId).style.display = 'block';
-            });
-        });
-    </script>
-
 </body>
 </html>
